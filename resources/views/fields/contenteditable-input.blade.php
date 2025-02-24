@@ -43,7 +43,7 @@
         x-data="{
         state: $wire.entangle('{{ $getStatePath() }}'),
         text: '{{ $field->getState() ?? '' }}'
-    }" x-init="$refs.chatInput.innerHTML = text || '{{ $field->getPlaceholder() }}'" x-ref="chatInputWrapper"
+    }" x-init="$refs.chatInput.innerHTML = text" x-ref="chatInputWrapper"
         @clear-chat-input.window="text = ''; state = ''; $refs.chatInput.innerHTML = '{{ $field->getPlaceholder() }}'"
         class="fi-input-wrp fi-fo-text-area overflow-auto rounded-lg ring-1 ring-gray-950/10 transition duration-75 dark:ring-white/20 [&:not(:has(.fi-ac-action:focus))]:focus-within:ring-2 [&:not(:has(.fi-ac-action:focus))]:focus-within:ring-primary-600">
         <!-- Editable Content -->
