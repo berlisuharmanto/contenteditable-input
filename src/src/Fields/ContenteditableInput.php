@@ -8,7 +8,7 @@ use Filament\Forms\Components\Contracts\HasAffixActions;
 use Filament\Forms\Components\Field;
 use Filament\Support\Concerns\HasExtraAlpineAttributes;
 
-class ContenteditableInput extends Field implements HasAffixActions, CanBeLengthConstrained
+class ContenteditableInput extends Field implements CanBeLengthConstrained, HasAffixActions
 {
     use Concerns\CanBeAutocapitalized;
     use Concerns\CanBeAutocompleted;
