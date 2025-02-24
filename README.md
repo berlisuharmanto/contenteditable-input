@@ -1,12 +1,5 @@
 # Just a custom filament form field for whatever you need
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/berlisuharmanto/contenteditable-input.svg?style=flat-square)](https://packagist.org/packages/berlisuharmanto/contenteditable-input)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/berlisuharmanto/contenteditable-input/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/berlisuharmanto/contenteditable-input/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/berlisuharmanto/contenteditable-input/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/berlisuharmanto/contenteditable-input/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/berlisuharmanto/contenteditable-input.svg?style=flat-square)](https://packagist.org/packages/berlisuharmanto/contenteditable-input)
-
-
-
 Just a simple custom filament form field, it implements contenteditable html just like text input on chat apps. Made it because I tired of simple textarea and want to use this method in my projects.
 
 ## Installation
