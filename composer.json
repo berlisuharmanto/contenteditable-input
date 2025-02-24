@@ -1,6 +1,7 @@
 {
     "name": "berlisuharmanto/contenteditable-input",
     "description": "Just a custom filament form field for whatever you need",
+    "type": "library",
     "keywords": [
         "berlisuharmanto",
         "laravel",
@@ -15,8 +16,7 @@
     "authors": [
         {
             "name": "Berli Suharmanto",
-            "email": "berli.suharmanto88@gmail.com",
-            "role": "Developer"
+            "email": "berli.suharmanto88@gmail.com"
         }
     ],
     "require": {
@@ -35,6 +35,21 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BerliSuharmanto\\ContenteditableInput\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BerliSuharmanto\\ContenteditableInput\\ContenteditableInputServiceProvider"
+            ],
+            "aliases": {
+                "ContenteditableInput": "BerliSuharmanto\\ContenteditableInput"
+            }
+        }
     },
     "autoload-dev": {
         "psr-4": {
