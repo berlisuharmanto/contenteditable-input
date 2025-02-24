@@ -55,31 +55,23 @@ class ContenteditableInputServiceProvider extends PackageServiceProvider
 
     public function packageRegistered(): void {}
 
-    public function packageBooted(): void
-    {
-        FilamentAsset::register(
-            $this->getAssets(),
-            $this->getAssetPackageName()
-        );
-
-        FilamentAsset::registerScriptData(
-            $this->getScriptData(),
-            $this->getAssetPackageName()
-        );
-
-        FilamentIcon::register($this->getIcons());
-
-        if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
-                $this->publishes([
-                    $file->getRealPath() => base_path("stubs/contenteditable-input/{$file->getFilename()}"),
-                ], 'contenteditable-input-stubs');
-            }
-        }
-
-        // Testing
-        Testable::mixin(new TestsContenteditableInput);
-    }
+    // public function packageBooted(): void
+    // {
+    //     FilamentAsset::register(
+    //         $this->getAssets(),
+    //         $this->getAssetPackageName()
+    //     );
+    //
+    //     FilamentAsset::registerScriptData(
+    //         $this->getScriptData(),
+    //         $this->getAssetPackageName()
+    //     );
+    //
+    //     FilamentIcon::register($this->getIcons());
+    //
+    //     // Testing
+    //     Testable::mixin(new TestsContenteditableInput);
+    // }
 
     protected function getAssetPackageName(): ?string
     {
@@ -103,9 +95,7 @@ class ContenteditableInputServiceProvider extends PackageServiceProvider
      */
     protected function getCommands(): array
     {
-        return [
-            ContenteditableInputCommand::class,
-        ];
+        return [];
     }
 
     /**
@@ -137,8 +127,6 @@ class ContenteditableInputServiceProvider extends PackageServiceProvider
      */
     protected function getMigrations(): array
     {
-        return [
-            'create_contenteditable-input_table',
-        ];
+        return [];
     }
 }
