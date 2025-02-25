@@ -3,7 +3,9 @@
 Just a simple custom filament form field, it implements contenteditable html just like text input on chat apps. Made it because I tired of simple textarea and want to use this method in my projects.
 
 
-https://github.com/user-attachments/assets/61543e9a-8ea1-4452-862d-1fac5d45878c
+
+![example](https://github.com/user-attachments/assets/b322a5f3-6c3c-4cb7-9a9e-efc789ab3a85)
+
 
 
 ## Installation
