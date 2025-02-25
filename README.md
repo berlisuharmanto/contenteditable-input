@@ -16,43 +16,12 @@ You can install the package via composer:
 composer require berlisuharmanto/contenteditable-input
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="contenteditable-input-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="contenteditable-input-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="contenteditable-input-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
 ```php
-$contenteditableInput = new Berlisuharmanto\ContenteditableInput();
-echo $contenteditableInput->echoPhrase('Hello, Berlisuharmanto!');
-```
-
-## Testing
-
-```bash
-composer test
+ContenteditableInput::make('something')
+    ->label('Something')
+    ->placeholder('Write something ...')
 ```
 
 ## Changelog
