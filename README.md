@@ -2,7 +2,11 @@
 
 Just a simple custom filament form field, it implements contenteditable html just like text input on chat apps. Made it because I tired of simple textarea and want to use this method in my projects.
 
-![alt text](https://github.com/berlisuharmanto/contenteditable-input/blob/main/public/videos/example.mkv?raw=true)
+
+
+https://github.com/user-attachments/assets/bee76f15-d020-4037-bf15-db7d79d2ca25
+
+
 
 ## Installation
 
